@@ -3,7 +3,7 @@
 <token id="Default" enabled="true" red="0" green="0" blue="0"/>
 <place id="B0">
 <graphics>
-<position x="45.0" y="300.0"/>
+<position x="45.0" y="120.0"/>
 </graphics>
 <name>
 <value>B0</value>
@@ -23,7 +23,7 @@
 </place>
 <place id="B1">
 <graphics>
-<position x="165.0" y="300.0"/>
+<position x="165.0" y="120.0"/>
 </graphics>
 <name>
 <value>B1</value>
@@ -43,7 +43,7 @@
 </place>
 <place id="B2">
 <graphics>
-<position x="345.0" y="300.0"/>
+<position x="540.0" y="120.0"/>
 </graphics>
 <name>
 <value>B2</value>
@@ -63,7 +63,7 @@
 </place>
 <place id="B3">
 <graphics>
-<position x="255.0" y="345.0"/>
+<position x="255.0" y="165.0"/>
 </graphics>
 <name>
 <value>B3</value>
@@ -83,12 +83,52 @@
 </place>
 <place id="B4">
 <graphics>
-<position x="465.0" y="300.0"/>
+<position x="345.0" y="210.0"/>
 </graphics>
 <name>
 <value>B4</value>
 <graphics>
+<offset x="15.0" y="-9.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
 <offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="B5">
+<graphics>
+<position x="435.0" y="165.0"/>
+</graphics>
+<name>
+<value>B5</value>
+<graphics>
+<offset x="13.0" y="-13.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="B6">
+<graphics>
+<position x="660.0" y="120.0"/>
+</graphics>
+<name>
+<value>B6</value>
+<graphics>
+<offset x="-1.0" y="-10.0"/>
 </graphics>
 </name>
 <initialMarking>
@@ -103,7 +143,7 @@
 </place>
 <transition id="A">
 <graphics>
-<position x="105.0" y="300.0"/>
+<position x="105.0" y="120.0"/>
 </graphics>
 <name>
 <value>A</value>
@@ -129,12 +169,12 @@
 </transition>
 <transition id="B">
 <graphics>
-<position x="300.0" y="345.0"/>
+<position x="480.0" y="165.0"/>
 </graphics>
 <name>
 <value>B</value>
 <graphics>
-<offset x="-5.0" y="35.0"/>
+<offset x="-2.0" y="41.0"/>
 </graphics>
 </name>
 <orientation>
@@ -155,7 +195,7 @@
 </transition>
 <transition id="C">
 <graphics>
-<position x="255.0" y="255.0"/>
+<position x="345.0" y="45.0"/>
 </graphics>
 <name>
 <value>C</value>
@@ -181,7 +221,7 @@
 </transition>
 <transition id="D">
 <graphics>
-<position x="210.0" y="345.0"/>
+<position x="210.0" y="165.0"/>
 </graphics>
 <name>
 <value>D</value>
@@ -207,12 +247,90 @@
 </transition>
 <transition id="E">
 <graphics>
-<position x="405.0" y="300.0"/>
+<position x="600.0" y="120.0"/>
 </graphics>
 <name>
 <value>E</value>
 <graphics>
 <offset x="34.0" y="51.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T5">
+<graphics>
+<position x="345.0" y="120.0"/>
+</graphics>
+<name>
+<value>T5</value>
+<graphics>
+<offset x="-2.0" y="2.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T6">
+<graphics>
+<position x="300.0" y="210.0"/>
+</graphics>
+<name>
+<value>T6</value>
+<graphics>
+<offset x="-1.0" y="55.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>true</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T7">
+<graphics>
+<position x="390.0" y="210.0"/>
+</graphics>
+<name>
+<value>T7</value>
+<graphics>
+<offset x="2.0" y="57.0"/>
 </graphics>
 </name>
 <orientation>
@@ -240,11 +358,11 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="121" y="312" curvePoint="false"/>
-<arcpath id="001" x="162" y="312" curvePoint="false"/>
+<arcpath id="000" x="121" y="132" curvePoint="false"/>
+<arcpath id="001" x="162" y="132" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="B3 to B" source="B3" target="B">
+<arc id="B3 to T5" source="B3" target="T5">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -253,8 +371,48 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="281" y="357" curvePoint="false"/>
-<arcpath id="001" x="306" y="357" curvePoint="false"/>
+<arcpath id="000" x="279" y="168" curvePoint="false"/>
+<arcpath id="001" x="351" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B3 to T6" source="B3" target="T6">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="278" y="186" curvePoint="false"/>
+<arcpath id="001" x="306" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B4 to T7" source="B4" target="T7">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="371" y="216" curvePoint="false"/>
+<arcpath id="001" x="396" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B5 to B" source="B5" target="B">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="177" curvePoint="false"/>
+<arcpath id="001" x="432" y="177" curvePoint="false"/>
+<arcpath id="002" x="486" y="177" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="B to B2" source="B" target="B2">
@@ -266,8 +424,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="316" y="357" curvePoint="false"/>
-<arcpath id="001" x="347" y="323" curvePoint="false"/>
+<arcpath id="000" x="496" y="177" curvePoint="false"/>
+<arcpath id="001" x="540" y="141" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="C to P3" source="C" target="B2">
@@ -279,8 +437,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="271" y="267" curvePoint="false"/>
-<arcpath id="001" x="343" y="305" curvePoint="false"/>
+<arcpath id="000" x="361" y="57" curvePoint="false"/>
+<arcpath id="001" x="538" y="126" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="D to B3" source="D" target="B3">
@@ -292,11 +450,11 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="226" y="357" curvePoint="false"/>
-<arcpath id="001" x="252" y="357" curvePoint="false"/>
+<arcpath id="000" x="226" y="177" curvePoint="false"/>
+<arcpath id="001" x="252" y="177" curvePoint="false"/>
 <type value="normal"/>
 </arc>
-<arc id="E to P5" source="E" target="B4">
+<arc id="E to P5" source="E" target="B6">
 <graphics/>
 <inscription>
 <value>Default,1</value>
@@ -305,8 +463,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="421" y="312" curvePoint="false"/>
-<arcpath id="001" x="462" y="312" curvePoint="false"/>
+<arcpath id="000" x="616" y="132" curvePoint="false"/>
+<arcpath id="001" x="657" y="132" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="P0 to A" source="B0" target="A">
@@ -318,8 +476,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="71" y="312" curvePoint="false"/>
-<arcpath id="001" x="111" y="312" curvePoint="false"/>
+<arcpath id="000" x="71" y="128" curvePoint="false"/>
+<arcpath id="001" x="111" y="132" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="P2 to C" source="B1" target="C">
@@ -331,8 +489,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="190" y="305" curvePoint="false"/>
-<arcpath id="001" x="261" y="267" curvePoint="false"/>
+<arcpath id="000" x="190" y="125" curvePoint="false"/>
+<arcpath id="001" x="351" y="57" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="P2 to D" source="B1" target="D">
@@ -344,8 +502,8 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="186" y="323" curvePoint="false"/>
-<arcpath id="001" x="216" y="357" curvePoint="false"/>
+<arcpath id="000" x="188" y="141" curvePoint="false"/>
+<arcpath id="001" x="216" y="177" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 <arc id="P3 to E" source="B2" target="E">
@@ -357,8 +515,47 @@
 <tagged>
 <value>false</value>
 </tagged>
-<arcpath id="000" x="371" y="312" curvePoint="false"/>
-<arcpath id="001" x="411" y="312" curvePoint="false"/>
+<arcpath id="000" x="566" y="128" curvePoint="false"/>
+<arcpath id="001" x="606" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to B5" source="T5" target="B5">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="361" y="132" curvePoint="false"/>
+<arcpath id="001" x="433" y="170" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T6 to B4" source="T6" target="B4">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="316" y="222" curvePoint="false"/>
+<arcpath id="001" x="342" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to B5" source="T7" target="B5">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="406" y="222" curvePoint="false"/>
+<arcpath id="001" x="437" y="188" curvePoint="false"/>
 <type value="normal"/>
 </arc>
 </net>
